@@ -21,6 +21,7 @@ router.get('/state/:name', function (req,res,next) {
 router.patch('/states/:name', function (req, res, next) {
     let stateName = req.params.name
     let stateVisited = req.body.visited
+    console.log(stateName,stateVisited)
 
     States.update( {visited:stateVisited}, {where: {name: stateName}})
         .then(rowsUpdated => {

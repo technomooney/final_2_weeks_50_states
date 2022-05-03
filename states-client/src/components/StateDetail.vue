@@ -3,7 +3,7 @@
   <span class="state-name">{{state.name}}</span>
 
   <div>
-    <input class="visit-state" type="checkbox" v-model="visitedModified" v-on:change="visitedChanged">
+    <input class="visit-state" type="checkbox" v-model="visited" v-on:change="visitedChanged">
   </div>
   <div class="to-center">
     <!-- nav to /map/[state name] aka /map/Minnesota or /map/Colorado-->
