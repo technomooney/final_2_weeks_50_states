@@ -1,5 +1,5 @@
 <template>
-  <div v-if="visitedStates">
+  <div v-if="visitedStates.length !== 0 && dataReady" >
     <h2>These are the states you have visited:</h2>
 
   <!--  found how to do this here: -->
@@ -16,12 +16,14 @@ export default {
   name: "StatesVisited",
   data(){
     return {
-      visitedStates:[]
+      visitedStates:[],
+      dataReady:false
     }
   },
   mounted() {
     this.$state_service.getVisited().then(states => {
       this.visitedStates = states
+      this.dataReady = true
     }).catch(err => {
       alert('Sorry, can\'t fetch state list')
       console.log(err)
