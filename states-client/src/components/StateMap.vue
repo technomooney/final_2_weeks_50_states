@@ -1,5 +1,5 @@
 <template>
-  <div v-if="validState" class="state-map" >
+  <div class="state-map" >
     <h2>State of {{ state.name }}</h2>
 
     <p v-if="state.visited">You have visited this state!</p>
@@ -45,7 +45,7 @@ export default {
       }).catch(err => {
         //404
         if (err.response && err.response.status === 404) {
-          this.validState = false
+          this.$router.push({name:'NotFound'})
         } else {
           alert(`sorry error fetching data about ${this.state.name}`)
           console.log(err)

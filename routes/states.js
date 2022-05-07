@@ -18,6 +18,14 @@ router.get('/state/:name', function (req,res,next) {
         }
     }).catch( err => next(err))
 })
+
+router.get('/states/visited', function (req,res,next) {
+    States.findAll({where: {visited: true}}).then(states => {
+        return (res.json(states))
+    }
+)
+})
+
 router.patch('/states/:name', function (req, res, next) {
     let stateName = req.params.name
     let stateVisited = req.body.visited

@@ -42,7 +42,7 @@ export default {
   width: 10rem;
   border: 1px gainsboro;
   border-radius: .3rem;
-  background-color: floralwhite;
+  background-color: #0c9981;
 }
 .visit-state {
   margin: 1rem;
@@ -59,7 +59,7 @@ export default {
   display: inline-flex;
   background-image: url("../assets/map_icon.png");
   background-size: contain;
-  filter: hue-rotate(-85deg) saturate(3)brightness(100%);
+  filter: hue-rotate(-8deg) saturate(3)brightness(100%);
 }
 
 

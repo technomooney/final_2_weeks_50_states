@@ -1,4 +1,6 @@
 import axios from "axios";
+
+let getVistited;
 export default  {
     getAllStates() {
         return axios.get('/api/states').then( resp => {
@@ -13,6 +15,11 @@ export default  {
     },
     getOneState(stateName) {
         return axios.get('/api/state/'+stateName).then(resp => {
+            return resp.data
+        })
+    },
+    getVisited() {
+        return axios.get('/api/states/visited').then(resp => {
             return resp.data
         })
     }

@@ -34,5 +34,7 @@ export default {
 </script>
 
 <style scoped>
-
+p {
+  color: #2f90b6;
+}
 </style>
