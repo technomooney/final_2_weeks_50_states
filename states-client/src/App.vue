@@ -26,6 +26,9 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+h2 {
+  color: #2f90b6;
+}
 body {
   background-color: #2c3e50;
 }

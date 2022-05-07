@@ -73,7 +73,9 @@ export default {
 </script>
 
 <style scoped>
+
 #map-container {
+  filter: invert() hue-rotate(180deg);
   height: 30rem;
 }
 </style>
