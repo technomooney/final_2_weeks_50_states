@@ -27,7 +27,10 @@ export default {
   color: #2c3e50;
 }
 h2 {
-  color: #2f90b6;
+  color: #117096;
+}
+p {
+  color: #2f90b6
 }
 body {
   background-color: #2c3e50;
