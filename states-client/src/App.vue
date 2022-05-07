@@ -35,4 +35,8 @@ p {
 body {
   background-color: #2c3e50;
 }
+a {
+  text-decoration: none;
+  color: darkcyan;
+}
 </style>
